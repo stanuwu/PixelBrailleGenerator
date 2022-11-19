@@ -1,0 +1,32 @@
+﻿<Window x:Class="PixelBrailleGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="PixelBraille by stan" Height="1200" Width="2400" Background="Black" ResizeMode="CanMinimize">
+    <Grid>
+        <DataGridCell BorderBrush="White" BorderThickness="2" Width="1000" Height="1000" HorizontalAlignment="Left"
+                      Margin="50 0 0 0" Cursor="Hand" PreviewMouseLeftButtonDown="UIElement_OnMouseLeftButtonDown">
+            <Image Name="PreviewImage" />
+        </DataGridCell>
+        <Grid Width="200" Height="330" HorizontalAlignment="Center">
+            <Label Foreground="White" Height="100" FontSize="32" VerticalAlignment="Top" Margin="10"
+                   Content="Ascii Size" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+            <TextBox BorderBrush="White" BorderThickness="2" Background="Black" Foreground="White" Height="100"
+                     FontSize="75" TextAlignment="Center" VerticalContentAlignment="Top" Name="SizeTextBox"
+                     VerticalAlignment="Center" MaxLength="4" Margin="10" Text="100" />
+            <Button BorderBrush="White" BorderThickness="2" Background="Black" Foreground="White" Height="100"
+                    FontSize="44" Name="ConvertButton" VerticalAlignment="Bottom" Margin="10"
+                    Click="ConvertButton_OnClick">
+                Convert
+            </Button>
+        </Grid>
+        <DataGridCell BorderBrush="White" BorderThickness="2" Width="1000" Height="1000" HorizontalAlignment="Right"
+                      Margin="0 0 50 0" Cursor="Hand"
+                      PreviewMouseLeftButtonDown="UIElement_OnPreviewMouseLeftButtonDown">
+            <TextBlock Foreground="White" Margin="10" Name="OutTextBlock" Text="Click to Copy Ascii Image"
+                       FontSize="14" TextWrapping="NoWrap" />
+        </DataGridCell>
+    </Grid>
+</Window>

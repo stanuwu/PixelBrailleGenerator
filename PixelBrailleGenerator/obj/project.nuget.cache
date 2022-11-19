@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hSsuz71/Q66x0qEZnlFZUQbyPHtHQDebduKw1C6iYviXciRqpXYANhmmGTGT75xI/cCSeLbn5plcLtco4UaLCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\STan\\RiderProjects\\PixelBraileGenerator\\PixelBrailleGenerator\\PixelBrailleGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\STan\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\STan\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
